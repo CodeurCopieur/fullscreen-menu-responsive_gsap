@@ -1,1 +1,5 @@
-# fullscreen-menu-responsive-_gsap
+# Fullscreen Menu Using GSAP
+
+* GSAP
+* SCSS/CSS
+* PUG/HTML
