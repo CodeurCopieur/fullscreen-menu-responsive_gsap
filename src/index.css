@@ -18,7 +18,7 @@ body {
 
 .component-header__nav-container {
   position: fixed;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100vh;
   background: #057197; }
