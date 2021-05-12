@@ -8,5 +8,25 @@ html(lang="en")
     link(rel="stylesheet", href="./src/index.css")
   body
 
+    header.component-header__container
+      .component-header__menu-open menu 
+      .component-header__nav-container
+        .component-header__menu-close close
+        .component-header__socials
+          span facebook 
+          span instagram 
+        nav.component-header__menu
+
+          each val, key in [{title: 'Home', img: 'menu-img-one.jpg'}, {title: 'Showcase', img: 'menu-img-two.jpg'}, {title: 'About', img: 'menu-img-three.jpg'}, {title: 'Contact', img: 'menu-img-four.jpg'}]
+
+           .component-header__menu-item
+             a.component-header__item-link(href="")=  val.title
+             img.component-header__item-img(src="./src/"+val.img, alt="")
+             .component-header__marquee
+              .component-header__marquee-inner
+                span= val.title +" - "+ val.title +" - "+ val.title +" - "+ val.title +" - "+ val.title +" - "+ val.title
+
+
+
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js") 
     script(src="./src/index.js") 
