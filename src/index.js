@@ -1,3 +1,6 @@
+const menuOpen = document.querySelector('.component-header__menu-open');
+const menuClose = document.querySelector('.component-header__menu-close');
+
 t1 = new TimelineMax({ paused:true });
 
 t1.to(".component-header__nav-container", 1, {
@@ -14,9 +17,6 @@ t1.staggerFrom(".component-header__socials span", .8, {
 }, "0.4", "-=0.6");
 
 t1.reverse();
-
-const menuOpen = document.querySelector('.component-header__menu-open');
-const menuClose = document.querySelector('.component-header__menu-close');
 
 menuOpen.addEventListener('click', ()=> {
   t1.reversed(!t1.reversed());
